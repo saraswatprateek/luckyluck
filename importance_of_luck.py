@@ -51,8 +51,8 @@ def func():
     average_luck_for_top_candidates = [calculate_average_luck_for_top_candidates(100000, 0.05, i) for i in top_precents]
 
     plt.plot(top_precents, average_luck_for_top_candidates)
-    plt.xlabel('Top percent luck')
-    plt.ylabel('Average Luck for top candidates')
+    plt.xlabel('x')
+    plt.ylabel('Average Luck for top x% candidates')
     plt.show()
 
     # 3. Average luck for top 0.1 percent of candidates vs luck_factor
@@ -60,7 +60,7 @@ def func():
     average_luck_for_top_candidates = [calculate_average_luck_for_top_candidates(100000, i, 0.1) for i in luck_factors]
 
     plt.plot(luck_factors, average_luck_for_top_candidates)
-    plt.xlabel('Percentage of luck in results')
+    plt.xlabel('Percentage of luck contribution in results')
     plt.ylabel('Average Luck for top candidates')
     plt.show()
 
